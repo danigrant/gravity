@@ -1,6 +1,6 @@
 pragma solidity ^0.4.2;
 
-contract GravatarFactory {
+contract GravatarRegistry {
   event NewGravatar(uint id, address owner, string displayName, string imageUrl);
   event UpdatedGravatar(uint id, address owner, string displayName, string imageUrl);
 
@@ -31,20 +31,20 @@ contract GravatarFactory {
   }
 
   function updateGravatarName(string _displayName) public {
-    uint id = ownerToGravatar[msg.sender];
-
     require(ownerToGravatar[msg.sender] != 0);
-    require(msg.sender == gravatars[id].owner);
+    require(msg.sender == gravatars[ownerToGravatar[msg.sender]].owner);
+
+    uint id = ownerToGravatar[msg.sender];
 
     gravatars[id].displayName = _displayName;
     emit UpdatedGravatar(id, msg.sender, _displayName, gravatars[id].imageUrl);
   }
 
   function updateGravatarImage(string _imageUrl) public {
-    uint id = ownerToGravatar[msg.sender];
-
     require(ownerToGravatar[msg.sender] != 0);
-    require(msg.sender == gravatars[id].owner);
+    require(msg.sender == gravatars[ownerToGravatar[msg.sender]].owner);
+
+    uint id = ownerToGravatar[msg.sender];
 
     gravatars[id].imageUrl =  _imageUrl;
     emit UpdatedGravatar(id, msg.sender, gravatars[id].displayName, _imageUrl);

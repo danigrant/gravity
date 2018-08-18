@@ -1,4 +1,4 @@
-var contract = artifacts.require("GravatarFactory");
+var contract = artifacts.require("GravatarRegistry");
 
 var contract_address = '0x345ca3e014aaf5dca488057592ee47305d9b3e10';
 

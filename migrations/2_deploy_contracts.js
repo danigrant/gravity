@@ -1,5 +1,5 @@
-var GravatarFactory = artifacts.require("GravatarFactory");
+var GravatarRegistry = artifacts.require("GravatarRegistry");
 
 module.exports = function(deployer) {
-  deployer.deploy(GravatarFactory);
+  deployer.deploy(GravatarRegistry);
 };
