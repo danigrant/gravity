@@ -1,10 +1,10 @@
-# Gravity: Gravatar For Ethereum Addresses
+# 👩‍🚀Gravity: Gravatar For Ethereum Addresses
 
 Gravity is a smart contract where ethereum account holders can store and update their gravatar images. Apps, dapps and wallets can easily pull account gravatar images from the smart contract to display them in-app. Enjoy!
 
 The smart contract is running at address `0x2E645469f354BB4F5c8a05B3b30A929361cf77eC`
 
-## Usage (Create a Gravatar!):
+## Create Your Gravatar!:
 
 In MyEtherWallet:
 
