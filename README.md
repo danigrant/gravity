@@ -1,6 +1,6 @@
 # 👩‍🚀 Gravity
 
-Gravity is [Gravatar](http://gravatar.com/) for Ethereum addresses.
+Gravity is [Gravatar](http://gravatar.com/) for Ethereum addresses. You can make one here: [gravity.cool](https://gravity.cool)
 
 Gravity is implemented as an Ethereum smart contract where account holders can set and update their own names and images to be used as avatars in decentralized applications. Apps, dapps and wallets can then easily pull gravatar names and images from the smart contract to display them as avatars in-app. Enjoy!
 
@@ -8,7 +8,9 @@ The smart contract is running at address `0x2E645469f354BB4F5c8a05B3b30A929361cf
  
 ## Gravitate. Aka Create Your Gravatar.
 
-In MyEtherWallet:
+You can make one here: [gravity.cool](https://gravity.cool)
+
+Or in MyEtherWallet:
 
 Go to the contracts page: https://www.myetherwallet.com/#contracts
 
