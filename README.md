@@ -76,6 +76,16 @@ imageUrl is a string pointing at a gravatar image (preferred square images). Exa
 GravatarRegistry.createGravatar(name, imageUrl)
 ```
 
+#### Check if the user has a gravatar:
+
+```
+GravatarRegistry.getGravatar(web3.eth.accounts[0], function(err, res) {
+  if (res[0] !== " ") { 
+     // user has a gravatar
+  }
+})
+```
+
 #### Get a user's gravatar:
 
 Address is an ethereum account address, passed in as a string. Example: `0x8d3e809fbd258083a5ba004a527159da535c8aba`
