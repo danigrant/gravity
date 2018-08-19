@@ -57,7 +57,7 @@ contract GravatarRegistry {
   // dani will invoke this function once when this contract is deployed
   // but then no more
   function setMythicalGravatar() public {
-    require(msg.sender == '0x8d3e809fbd258083a5ba004a527159da535c8aba');
-    gravatars.push(Gravatar('0x0', '0', '0'));
+    require(msg.sender == 0x8d3e809Fbd258083a5Ba004a527159Da535c8abA);
+    gravatars.push(Gravatar(0x0, " ", " "));
   }
 }
