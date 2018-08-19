@@ -1,6 +1,6 @@
 # 👩‍🚀 Gravity
 
-Gravity is Gravatar for Ethereum addresses.
+Gravity is [Gravatar](http://gravatar.com/) for Ethereum addresses.
 
 Gravity is implemented as an Ethereum smart contract where account holders can set and update their own names and images to be used as avatars in decentralized applications. Apps, dapps and wallets can then easily pull gravatar names and images from the smart contract to display them as avatars in-app. Enjoy!
 
