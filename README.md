@@ -6,7 +6,7 @@ Gravity is implemented as an Ethereum smart contract where account holders can s
 
 The smart contract is running at address `0x2E645469f354BB4F5c8a05B3b30A929361cf77eC`
  
-## Create Your Gravatar!
+## Gravitate. Aka Create Your Gravatar.
 
 In MyEtherWallet:
 
@@ -30,8 +30,9 @@ Then click the button that says 'Write'
 
 You will be asked to sign the transaction with MetaMask (or whichever wallet you use)
 
-Once the transaction is verified, you can then choose getGravatar from the 'Read/Write Contract' dropdown, enter in your ethereum address, and see your gravatar name and image url.
+💃You're done! Congrats on the new Gravatar!
 
+Once the transaction is verified, you can then choose getGravatar from the 'Read/Write Contract' dropdown, enter in your ethereum address, and see your gravatar name and image url.
 
 ## For Developers: Adding Support for Gravatar:
 
