@@ -15,6 +15,12 @@ contract GravatarRegistry {
   mapping (uint => address) public gravatarToOwner;
   mapping (address => uint) public ownerToGravatar;
 
+  address private registryOwner;
+
+  constructor() public {
+    registryOwner = msg.sender;
+  }
+
   function createGravatar(string _displayName, string _imageUrl) public {
     require(ownerToGravatar[msg.sender] == 0);
     uint id = gravatars.push(Gravatar(msg.sender, _displayName, _imageUrl)) - 1;
@@ -57,7 +63,7 @@ contract GravatarRegistry {
   // dani will invoke this function once when this contract is deployed
   // but then no more
   function setMythicalGravatar() public {
-    require(msg.sender == 0x8d3e809Fbd258083a5Ba004a527159Da535c8abA);
+    require(msg.sender == registryOwner);
     gravatars.push(Gravatar(0x0, " ", " "));
   }
 }
