@@ -15,10 +15,10 @@ contract GravatarRegistry {
   mapping (uint => address) public gravatarToOwner;
   mapping (address => uint) public ownerToGravatar;
 
-  address private owner;
+  address private registryOwner;
 
   constructor() public {
-    owner = msg.sender;
+    registryOwner = msg.sender;
   }
 
   function createGravatar(string _displayName, string _imageUrl) public {
@@ -63,7 +63,7 @@ contract GravatarRegistry {
   // dani will invoke this function once when this contract is deployed
   // but then no more
   function setMythicalGravatar() public {
-    require(msg.sender == owner);
+    require(msg.sender == registryOwner);
     gravatars.push(Gravatar(0x0, " ", " "));
   }
 }
